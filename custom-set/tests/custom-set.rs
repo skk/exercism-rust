@@ -16,7 +16,6 @@ fn sets_with_elements_are_not_empty() {
 }
 
 #[test]
-#[ignore]
 fn nothing_is_contained_in_an_empty_set() {
     let set = CustomSet::new(vec![]);
     assert!(!set.contains(&1));
@@ -236,7 +235,6 @@ fn intersection_of_two_sets_with_shared_elements_is_a_set_of_the_shared_elements
 }
 
 #[test]
-#[ignore]
 fn difference_of_two_empty_sets_is_empty_set() {
     let set1: CustomSet<()> = CustomSet::new(vec![]);
     let set2: CustomSet<()> = CustomSet::new(vec![]);
@@ -268,7 +266,6 @@ fn difference_of_two_non_empty_sets_is_elements_only_in_first_set_one() {
 }
 
 #[test]
-#[ignore]
 fn union_of_two_empty_sets_is_empty_set() {
     let set1: CustomSet<()> = CustomSet::new(vec![]);
     let set2: CustomSet<()> = CustomSet::new(vec![]);
