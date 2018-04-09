@@ -29,7 +29,7 @@ impl<T: Ord> CustomSet<T>
     }
 
     pub fn contains(&self, c: &T) -> bool where T: PartialEq {
-        self.data.iter().find(|&x| x == c).is_some()
+        self.data.iter().any(|x| x == c)
     }
 
     fn _add(&mut self, c: &T) -> () where T: PartialEq + Clone + Debug {
